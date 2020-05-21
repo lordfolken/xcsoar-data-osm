@@ -8,5 +8,6 @@ RUN apt-get install $APT_OPTS pbzip2 gzip pigz bzip2 && apt-get clean
 RUN apt-get install $APT_OPTS osmctools && apt-get clean
 RUN apt-get install $APT_OPTS gdal-bin && apt-get clean
 RUN apt-get install $APT_OPTS rename && apt-get clean
+RUN apt-get install $APT_OPTS unzip zip && apt-get clean
 
 VOLUME /data
